@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = [
         '.section-header',
         '.about-text',
-        '.about-image',
+        '.about-license',
         '.service-card',
         '.contact-info',
         '.contact-form'

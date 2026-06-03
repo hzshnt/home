@@ -284,10 +284,10 @@ body {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: stretch;
 }
 
 .about-text h3 {
@@ -332,6 +332,24 @@ body {
     justify-content: center;
 }
 
+.about-license {
+    margin: 0;
+    width: 100%;
+    padding: 1rem;
+    background: #fff;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.about-license-img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: calc(var(--radius-lg) - 0.25rem);
+}
+
 .image-placeholder {
     width: 100%;
     max-width: 500px;
@@ -362,12 +380,6 @@ body {
     object-fit: cover;
     border-radius: var(--radius-lg);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-
-.about-photo--license {
-    max-width: 720px;
-    height: auto;
-    object-fit: contain;
 }
 
 /* 服务区域 */
@@ -680,8 +692,11 @@ body {
     }
 
     .about-content {
-        grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .about-license {
+        padding: 0.75rem;
     }
 
     .about-text h3 {
